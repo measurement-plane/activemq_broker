@@ -6,8 +6,8 @@ IMAGE_NAME="apache/activemq-classic"
 PORTS="-p 8161:8161 -p 5672:5672"
 
 # Stop and remove any running container with the same name
-docker stop $CONTAINER_NAME || true
-docker rm $CONTAINER_NAME || true
+docker stop $CONTAINER_NAME >/dev/null 2>&1 || true
+docker rm $CONTAINER_NAME >/dev/null 2>&1 || true
 
 # Pull the latest ActiveMQ image
 docker pull $IMAGE_NAME
