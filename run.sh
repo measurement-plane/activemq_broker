@@ -2,7 +2,7 @@
 
 # Set environment variables
 CONTAINER_NAME="activemq_broker_container"
-IMAGE_NAME="apache/activemq-classic"
+IMAGE_NAME="amlabdr/custom-activemq"
 PORTS="-p 8161:8161 -p 5672:5672"
 
 # Stop and remove any running container with the same name
